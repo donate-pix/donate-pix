@@ -73,8 +73,8 @@ micronaut {
         sharedServer = true
     }
     aot {
-    // Please review carefully the optimizations enabled below
-    // Check https://micronaut-projects.github.io/micronaut-aot/latest/guide/ for more details
+        // Please review carefully the optimizations enabled below
+        // Check https://micronaut-projects.github.io/micronaut-aot/latest/guide/ for more details
         optimizeServiceLoading = false
         convertYamlToJava = false
         precomputeOperations = true
