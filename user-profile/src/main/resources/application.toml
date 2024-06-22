@@ -1,0 +1,15 @@
+micronaut.application.name = 'donate-pix'
+elasticsearch.httpHosts = 'http://localhost:9200,http://127.0.0.2:9200'
+redis.uri = 'redis://localhost'
+
+[micronaut.router.static-resources.swagger]
+paths = 'classpath:META-INF/swagger'
+mapping = '/swagger/**'
+
+[micronaut.router.static-resources.swagger-ui]
+paths = 'classpath:META-INF/swagger/views/swagger-ui'
+mapping = '/swagger-ui/**'
+
+[micronaut.router.static-resources.jsonschema]
+paths = 'classpath:META-INF/schemas'
+mapping = '/schemas/**'

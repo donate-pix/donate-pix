@@ -16,7 +16,6 @@ dependencies {
     annotationProcessor("org.projectlombok:lombok")
     annotationProcessor("io.micronaut.data:micronaut-data-document-processor")
     annotationProcessor("io.micronaut:micronaut-http-validation")
-    annotationProcessor("io.micronaut.json-schema:micronaut-json-schema-processor")
     annotationProcessor("io.micronaut.openapi:micronaut-openapi")
     annotationProcessor("io.micronaut.serde:micronaut-serde-processor")
     annotationProcessor("io.micronaut.validation:micronaut-validation-processor")
@@ -27,7 +26,6 @@ dependencies {
     implementation("io.micronaut.data:micronaut-data-mongodb")
     implementation("io.micronaut.elasticsearch:micronaut-elasticsearch")
     implementation("io.micronaut.email:micronaut-email-javamail")
-    implementation("io.micronaut.json-schema:micronaut-json-schema-annotations")
     implementation("io.micronaut.kafka:micronaut-kafka")
     implementation("io.micronaut.problem:micronaut-problem-json")
     implementation("io.micronaut.rabbitmq:micronaut-rabbitmq")
@@ -35,7 +33,9 @@ dependencies {
     implementation("io.micronaut.serde:micronaut-serde-bson")
     implementation("io.micronaut.serde:micronaut-serde-jackson")
     implementation("io.micronaut.serde:micronaut-serde-jsonp")
+
     implementation("io.micronaut.toml:micronaut-toml")
+
     implementation("io.micronaut.validation:micronaut-validation")
     implementation("jakarta.annotation:jakarta.annotation-api")
     implementation("jakarta.validation:jakarta.validation-api")
@@ -47,14 +47,15 @@ dependencies {
     runtimeOnly("org.apache.logging.log4j:log4j-slf4j-impl")
     runtimeOnly("org.eclipse.angus:angus-mail")
     runtimeOnly("org.mongodb:mongodb-driver-sync")
-    testImplementation("io.micronaut.json-schema:micronaut-json-schema-validation")
+
     testImplementation("org.mockito:mockito-core")
 }
 
 
 application {
-    mainClass = "io.github.donatepix.Application"
+    mainClass = "io.github.donatepix.user.UserProfileApplication"
 }
+
 java {
     sourceCompatibility = JavaVersion.toVersion("17")
     targetCompatibility = JavaVersion.toVersion("17")
